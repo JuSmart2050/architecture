@@ -13,7 +13,6 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.shanian.arch.mvvm.R;
-import com.shanian.arch.mvvm.actordetail.ActorDetailFragment;
 import com.shanian.arch.mvvm.base.BaseFragment;
 import com.shanian.arch.mvvm.bean.EntriesBean;
 import com.shanian.arch.mvvm.databinding.MovieComingFragmentBinding;
@@ -47,20 +46,8 @@ public class MovieComingFragment extends BaseFragment {
             items.addAll(objects.getEntries());
             adapter.notifyDataSetChanged();
         });
-
-        initActorDetailFragment();
-
-        initData();
+        movieComingViewModel.fetchMovieComingViewModel();
         return movieComingFragmentBinding.getRoot();
     }
 
-    @Override
-    public void initData() {
-        movieComingViewModel.fetchMovieComingViewModel();
-    }
-
-    private void initActorDetailFragment() {
-        ActorDetailFragment actorDetailFragment = new ActorDetailFragment();
-        replaceFragmentInActivity(getActivity().getSupportFragmentManager(), actorDetailFragment, R.id.actor_detail_fragment);
-    }
 }

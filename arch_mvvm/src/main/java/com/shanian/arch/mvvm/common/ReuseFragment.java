@@ -35,11 +35,6 @@ public class ReuseFragment extends BaseFragment {
         getReuseViewModel().getReuseViewModel().postValue(new Random().nextInt() + "");
     }
 
-    @Override
-    public void initData() {
-
-    }
-
     public ReuseViewModel getReuseViewModel() {
         return reuseViewModel;
     }

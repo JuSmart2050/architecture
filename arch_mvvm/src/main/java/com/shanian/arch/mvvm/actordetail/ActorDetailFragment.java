@@ -11,7 +11,6 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.shanian.arch.mvvm.R;
 import com.shanian.arch.mvvm.base.BaseFragment;
-import com.shanian.arch.mvvm.common.ReuseFragment;
 import com.shanian.arch.mvvm.databinding.ActorDetailFragmentBinding;
 
 public class ActorDetailFragment extends BaseFragment {
@@ -33,19 +32,8 @@ public class ActorDetailFragment extends BaseFragment {
         ActorDetailFragmentBinding actorDetailFragmentBinding = ActorDetailFragmentBinding.bind(view);
         actorDetailFragmentBinding.setActorDetail(actorDetailViewModel);
         actorDetailFragmentBinding.setLifecycleOwner(getActivity());
-
-        initData();
-        return view;
-    }
-
-    @Override
-    public void initData() {
-        ReuseFragment reuseFragment = new ReuseFragment();
-        replaceFragmentInActivity(getActivity().getSupportFragmentManager(), reuseFragment, R.id.fragment1);
         //TODO 开始获取接口数据
         actorDetailViewModel.getActorDetail();
-
+        return view;
     }
-
-
 }

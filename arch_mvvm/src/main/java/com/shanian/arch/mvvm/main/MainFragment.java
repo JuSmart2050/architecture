@@ -36,13 +36,7 @@ public class MainFragment extends BaseFragment {
 
     }
 
-    @Override
-    public void initData() {
-
-    }
-
     private void init() {
-
         List<Fragment> list = new ArrayList<>();
         list.add(new ActorDetailFragment());
         list.add(new MovieComingFragment());
