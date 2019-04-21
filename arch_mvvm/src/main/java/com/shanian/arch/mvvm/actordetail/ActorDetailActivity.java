@@ -13,10 +13,4 @@ public class ActorDetailActivity extends BaseActivity<ActorDetailFragment> {
         super.onCreate(savedInstanceState);
     }
 
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        fragment.initData();
-    }
-
 }

@@ -11,10 +11,4 @@ public class MainActivity extends BaseActivity<MainFragment> {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
-
-    @Override
-    public void onWindowFocusChanged(boolean hasFocus) {
-        super.onWindowFocusChanged(hasFocus);
-        fragment.initData();
-    }
 }
