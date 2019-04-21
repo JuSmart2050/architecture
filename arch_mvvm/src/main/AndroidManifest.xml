@@ -1,0 +1,9 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shanian.arch.mvvm" >
+
+    <application>
+        <activity android:name=".main.MainActivity"/>
+        <activity android:name=".actordetail.ActorDetailActivity"/>
+        <activity android:name=".actorlist.MovieComingActivity"/>
+    </application>
+</manifest>
