@@ -8,6 +8,8 @@ import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 
+import com.shanian.arch.v.mvvm.v.packa.PackAActivity;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -15,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         findViewById(R.id.btn).setOnClickListener(view -> {
-            startActivity(new Intent(MainActivity.this, com.shanian.arch.mvvm.main.MainActivity.class));
+            startActivity(new Intent(MainActivity.this, PackAActivity.class));
         });
 
         // Check if we have write permission

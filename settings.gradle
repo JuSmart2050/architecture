@@ -1,1 +1,1 @@
-include ':app', ':arch_mvvm', ':libbase'
+include ':app', ':arch_mvvm', ':libbase', ':arch_v_mvvm'
