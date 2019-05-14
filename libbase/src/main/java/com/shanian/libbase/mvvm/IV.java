@@ -1,4 +1,4 @@
-package com.shanian.libbase.view;
+package com.shanian.libbase.mvvm;
 
 import android.content.Intent;
 import android.os.Bundle;

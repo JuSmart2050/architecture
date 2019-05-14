@@ -4,7 +4,7 @@ import android.os.Bundle;
 
 import androidx.annotation.Nullable;
 
-import com.shanian.libbase.view.BaseActivity;
+import com.shanian.libbase.mvvm.BaseActivity;
 
 public class PackAActivity extends BaseActivity<PackA> {
 

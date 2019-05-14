@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.shanian.arch.v.mvvm.R;
 import com.shanian.arch.v.mvvm.databinding.PackABinding;
-import com.shanian.libbase.view.V;
+import com.shanian.libbase.mvvm.V;
 
 public class PackA extends V {
 
